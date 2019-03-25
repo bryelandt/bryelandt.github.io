@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brieuc Ryelandt</title>
+</head>
+
+<body>
+  <h1>Brieuc Ryelandt</h1>
+		<p>Explications portfolio, info de base</p>
+
+	<div class="accordion-container">
+		<div class="accordion-toggle">Modélisation spatiale d'une population de moustiques tigres</div>
+		<div class="accordion-content">
+			<div class = "align">
+				<div id="project">
+					<p>Lors de ce projet, l'objectif était de mobiliser les compétences acquises lors d'un cours de modélisation de manière individuelle et libre sur le choix du modèle. Mon choix s'est porté sur un modèle de population de moustiques trouvé dans une thèse que j'ai implémenté en Matlab. Afin de le spatialiser, il a fallut collecter et interpoler des données météo (input du modèle de population) ainsi qu'implémenter les équations de diffusion et leur résolution numérique. Enfin, j'ai présenté les résulats sous forme d'une vidéo montrant l'évolution de la population sur la carte de la France.</p>
+				</div>
+				<div id="competences">
+					<ul>
+						<li> Recherches bibliographiques</li>
+						<li> Implémentation d'un modèle de population existant</li>
+						<li> Collecte, traitement et interpolation de données météo</li>
+						<li> Spatialisation du modèle avec des équations de diffusion-réaction</li>
+						<li> Résolution numérique d'équations dérivées partielles</li>
+						<li> Langage de programmation: Matlab</li>
+					</ul>
+				</div> 
+			</div>
+			<div id="media">
+				<video width=80% height=20% controls>
+					<source src="mosquito.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video> 
+			</div>
+			<a class="git" href="https://github.com/bryelandt/Portfolio/blob/master/Projet_mod.pdf" target="_blank"> Lire le rapport </a>
+		</div>
+	</div>
+
+	<div class="accordion-container">
+		<div class="accordion-toggle">Modélisation spatiale d'une population de moustiques tigres</div>
+		<div class="accordion-content">
+			<div class = "align">
+				<div id="project">
+					<p>Lors de ce projet, l'objectif était de mobiliser les compétences acquises lors d'un cours de modélisation de manière individuelle et libre sur le choix du modèle. Mon choix s'est porté sur un modèle de population de moustiques trouvé dans une thèse que j'ai implémenté en Matlab. Afin de le spatialiser, il a fallut collecter et interpoler des données météo (input du modèle de population) ainsi qu'implémenter les équations de diffusion et leur résolution numérique. Enfin, j'ai présenté les résulats sous forme d'une vidéo montrant l'évolution de la population sur la carte de la France.</p>
+				</div>
+				<div id="competences">
+					<ul>
+						<li> Recherches bibliographiques</li>
+						<li> Implémentation d'un modèle de population existant</li>
+						<li> Collecte, traitement et interpolation de données météo</li>
+						<li> Spatialisation du modèle avec des équations de diffusion-réaction</li>
+						<li> Résolution numérique d'équations dérivées partielles</li>
+						<li> Langage de programmation: Matlab</li>
+					</ul>
+				</div> 
+			</div>
+			<div id="media">
+				<video width=80% height=20% controls>
+					<source src="mosquito.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video> 
+			</div>
+			<a class="git" href="https://github.com/bryelandt/Portfolio/blob/master/Projet_mod.pdf" target="_blank"> Lire le rapport </a>
+		</div>
+	</div>
+
+</body>
+
+<script>
+	$(document).ready(function () {
+    $('.accordion-toggle').on('click', function(event){
+    	event.preventDefault();
+    	// create accordion variables
+    	var accordion = $(this);
+    	var accordionContent = accordion.next('.accordion-content');
+    	
+    	// toggle accordion link open class
+    	accordion.toggleClass("open");
+    	// toggle accordion content
+    	accordionContent.slideToggle(250);
+    });
+	});
+</script>
+
+</html>
