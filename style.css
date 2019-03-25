@@ -38,6 +38,11 @@
 	vertical-align: middle;
 }
 
+.accordion-toggle:hover
+{
+	cursor: pointer; 
+}
+
 .accordion-toggle.open,.accordion-toggle:hover {
 	background: #333;
 }
@@ -91,6 +96,9 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
 	background-color:#dfdfdf;
 }
-
+.git:active {
+	position:relative;
+	top:15px;
+}
 
 
