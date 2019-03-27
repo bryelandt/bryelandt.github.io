@@ -1,12 +1,70 @@
+body
+{
+	text-align: center;
+	font-family:Arial;
+}
+
+h1 
+{
+
+}
+
+h2
+{
+	width: 100%;
+	background: #999;
+	padding: 10px;
+}
+
+h3
+{
+	font-size: 1.2em;
+	width: 50%;
+	max-height: 5em;
+	color: black;
+}
+
+h4
+{
+	text-align:center;
+	font-size: medium;
+}
+
+#skills 
+{
+	max-width:900px;
+	margin: auto;
+}
+
+span.line {
+  display: block;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 0.9em;
+	text-align:center;
+}
+
 #competences
 {
-	width:30%;
+	width:45%;
+	max-width: 400px;
+	font-size: 0.8em;
+	text-align:left;
+	align-self: center;
+}
+
+p.outils
+{
+	text-align: center;
 }
 
 #project
 {
-	width: 30%;
-	text-align:justify;
+	width: 45%;
+	max-width: 400px;
+	font-size: 0.8em;
+	text-align:left;
+	align-self: center;
 }
 
 .align
@@ -19,23 +77,29 @@
 .accordion-container{
 	position: relative;	
 	background: #999;
-	font-weight: bold;
 	width: 100%;
 	min-height: 5em;
 	text-align: center;
 }
 
+.pair
+{
+
+}
+.impair
+{
+
+}
+
 .accordion-toggle {
-	display: block;
+	display: flex;
+	justify-content: center;
 	position: relative;
-	font-size: 1em;
-	font-weight: 300;
-	height: 5em;
-	line-height: 5em;
+	margin-top: 1px;
+	min-height: 5em;
 	background: #999;
 	color: #fff;
-	text-decoration: none;
-	vertical-align: middle;
+	align-items: center;
 }
 
 .accordion-toggle:hover
@@ -54,8 +118,6 @@
 }
 .accordion-content {
 	display: none;
-	padding: 20px;
-	overflow: auto;
 }
 
 .git {
@@ -83,8 +145,7 @@
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
-	position: relative;
-	top: 15px;
+	margin: 15px;
 }
 .git:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
@@ -97,8 +158,32 @@
 	background-color:#dfdfdf;
 }
 .git:active {
-	position:relative;
-	top:15px;
+	margin: 15px;t
 }
 
+.skill_icon
+{
+	height: 1.1em;
+	padding-right: 10px;
+}
+
+.skill_icon2
+{
+	/*display: inline-block;*/
+	margin-left: 0.5em;
+	height: 1.5em;
+}
+
+.skill_tile
+{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	width: 250px;
+	height: 250px;
+	margin: 5px;
+	padding: 5px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+}
 
