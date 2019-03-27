@@ -2,6 +2,7 @@ body
 {
 	text-align: center;
 	font-family:Arial;
+	overflow-x: hidden;
 }
 
 h1 
@@ -14,6 +15,7 @@ h2
 	width: 100%;
 	background: #999;
 	padding: 10px;
+	text-align: center;
 }
 
 h3
@@ -34,6 +36,7 @@ h4
 {
 	max-width:900px;
 	margin: auto;
+	
 }
 
 span.line {
@@ -51,6 +54,11 @@ span.line {
 	font-size: 0.8em;
 	text-align:left;
 	align-self: center;
+}
+
+p
+{
+	font-size: small;
 }
 
 p.outils
@@ -108,7 +116,7 @@ p.outils
 }
 
 .accordion-toggle.open,.accordion-toggle:hover {
-	background: #333;
+	background: #666;
 }
 .accordion-toggle span.toggle-icon {
 	position: absolute;
@@ -178,7 +186,7 @@ p.outils
 {
 	display: inline-block;
 	vertical-align: middle;
-	text-align: left;
+	text-align: center;
 	width: 250px;
 	height: 250px;
 	margin: 5px;
