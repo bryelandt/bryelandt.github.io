@@ -1,8 +1,9 @@
 body
 {
 	text-align: center;
-	font-family:Arial;
+  font-family: 'Montserrat', Arial, sans-serif;
 	overflow-x: hidden;
+	color: #333;
 }
 
 h1 
@@ -13,9 +14,10 @@ h1
 h2
 {
 	width: 100%;
-	background: #999;
 	padding: 10px;
 	text-align: center;
+	margin-top: 80px;
+	color: #6bb96b;
 }
 
 h3
@@ -23,20 +25,22 @@ h3
 	font-size: 1.2em;
 	width: 50%;
 	max-height: 5em;
-	color: black;
 }
 
 h4
 {
 	text-align:center;
 	font-size: medium;
+	margin: 10px;
 }
 
 #skills 
 {
+	display: flex;
+	flex-wrap: wrap;
 	max-width:900px;
 	margin: auto;
-	
+	justify-content: center;
 }
 
 span.line {
@@ -49,7 +53,6 @@ span.line {
 
 #competences
 {
-	width:45%;
 	max-width: 400px;
 	font-size: 0.8em;
 	text-align:left;
@@ -59,6 +62,7 @@ span.line {
 p
 {
 	font-size: small;
+	margin: 10px;
 }
 
 p.outils
@@ -66,9 +70,14 @@ p.outils
 	text-align: center;
 }
 
+video
+{
+	border:1px solid #dcdcdc;
+	margin-top: 50px;
+}
+
 #project
 {
-	width: 45%;
 	max-width: 400px;
 	font-size: 0.8em;
 	text-align:left;
@@ -84,7 +93,6 @@ p.outils
 
 .accordion-container{
 	position: relative;	
-	background: #999;
 	width: 100%;
 	min-height: 5em;
 	text-align: center;
@@ -105,8 +113,7 @@ p.outils
 	position: relative;
 	margin-top: 1px;
 	min-height: 5em;
-	background: #999;
-	color: #fff;
+	background: #94ff94;
 	align-items: center;
 }
 
@@ -115,8 +122,8 @@ p.outils
 	cursor: pointer; 
 }
 
-.accordion-toggle.open,.accordion-toggle:hover {
-	background: #666;
+.accordion-toggle:hover {
+	background: #7eda7e;
 }
 .accordion-toggle span.toggle-icon {
 	position: absolute;
@@ -184,11 +191,10 @@ p.outils
 
 .skill_tile
 {
-	display: inline-block;
 	vertical-align: middle;
-	text-align: center;
+	text-align: left;
 	width: 250px;
-	height: 250px;
+	height: 300px;
 	margin: 5px;
 	padding: 5px;
 	border-radius:6px;
