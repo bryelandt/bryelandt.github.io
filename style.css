@@ -3,7 +3,7 @@ body
 	text-align: center;
   font-family: 'Montserrat', Arial, sans-serif;
 	overflow-x: hidden;
-	color: #333;
+	color: #777;
 }
 
 h1 
@@ -25,6 +25,7 @@ h3
 	font-size: 1.2em;
 	width: 50%;
 	max-height: 5em;
+	color: #555;
 }
 
 h4
@@ -62,6 +63,7 @@ p
 {
 	font-size: small;
 	margin: 10px;
+	line-height:1.2rem;
 }
 
 p.outils
@@ -77,7 +79,6 @@ video
 #project
 {
 	max-width: 400px;
-	font-size: 0.8em;
 	text-align:left;
 }
 
@@ -183,7 +184,7 @@ video
 	vertical-align: middle;
 	text-align: left;
 	width: 250px;
-	height: 300px;
+	min-height: 285px;
 	margin: 5px;
 	padding: 5px;
 	border-radius:6px;
