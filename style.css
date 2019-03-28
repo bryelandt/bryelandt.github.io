@@ -22,17 +22,16 @@ h2
 
 h3
 {
-	font-size: 1.2em;
-	width: 50%;
-	max-height: 5em;
-	color: #555;
+	font-size: 1.2rem;
+	max-height: 5rem;
+	color: #555	;
 }
 
 h4
 {
 	text-align:center;
 	font-size: medium;
-	margin: 10px;
+	margin-top: 40px;
 }
 
 #skills 
@@ -50,6 +49,8 @@ span.line {
 	padding: 5px;
 	font-size: 0.9em;
 	text-align:center;
+	margin: 10px;
+	margin-bottom:0px;
 }
 
 #competences
@@ -74,6 +75,7 @@ p.outils
 video
 {
 	border:1px solid #dcdcdc;
+	margin-top: 40px;
 }
 
 #project
@@ -87,7 +89,6 @@ video
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 40px;
 }
 
 .accordion-container{
@@ -102,7 +103,7 @@ video
 	justify-content: center;
 	position: relative;
 	margin-top: 1px;
-	min-height: 5em;
+	min-height: 5rem;
 	background: #94ff94;
 	align-items: center;
 }
@@ -166,17 +167,27 @@ video
 	margin: 30px;
 }
 
+.icons
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	max-width: 20%;
+	margin: 10px;
+	height: 5rem;
+}
+
 .skill_icon
 {
 	height: 1.1em;
-	padding-right: 10px;
+	margin-right: 10px;
 }
 
 .skill_icon2
 {
-	/*display: inline-block;*/
-	margin-left: 0.5em;
-	height: 1.5em;
+	margin: 10px;
+	height: 1.3em;
 }
 
 .skill_tile
@@ -189,5 +200,22 @@ video
 	padding: 5px;
 	border-radius:6px;
 	border:1px solid #dcdcdc;
+}
+
+@media screen and (max-width: 640px) {
+  h3 {
+    font-size: medium;
+  }
+	
+	.icons
+	{	
+		margin: 5px;
+	}
+
+	.skill_icon2
+	{
+		height: 0.7rem;
+		margin: 5px;
+	}
 }
 
