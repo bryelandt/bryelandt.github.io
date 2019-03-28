@@ -1,3 +1,9 @@
+a
+{
+	text-decoration: none;
+	color: #777;
+}
+
 body
 {
 	text-align: center;
@@ -8,7 +14,7 @@ body
 
 h1 
 {
-
+	font-size: medium;
 }
 
 h2
@@ -34,32 +40,6 @@ h4
 	margin-top: 40px;
 }
 
-#skills 
-{
-	display: flex;
-	flex-wrap: wrap;
-	max-width:900px;
-	margin: auto;
-	justify-content: center;
-}
-
-span.line {
-  display: block;
-	font-weight: bold;
-	padding: 5px;
-	font-size: 0.9em;
-	text-align:center;
-	margin: 10px;
-	margin-bottom:0px;
-}
-
-#competences
-{
-	max-width: 400px;
-	font-size: 0.8em;
-	text-align:left;
-}
-
 p
 {
 	font-size: small;
@@ -72,16 +52,88 @@ p.outils
 	text-align: center;
 }
 
+span.line {
+  display: block;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 0.9em;
+	text-align:center;
+	margin: 10px;
+	margin-bottom:0px;
+}
+
 video
 {
 	border:1px solid #dcdcdc;
 	margin-top: 40px;
 }
 
+#CV
+{
+	margin: 5px;
+	font-weight: bold;
+	padding: 5px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+}
+
+#competences
+{
+	max-width: 400px;
+	font-size: 0.8em;
+	text-align:left;
+}
+
+#contact
+{
+	order: 3;
+	width: 200px;
+	margin:25px;
+}
+
+#header
+{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin:auto;
+	max-height: 400px;
+	max-width: 800px;
+	margin-top: 50px;
+}
+
+#In-CV
+{
+	display: flex;
+	order: 2;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	margin-bottom:auto;
+	margin: 25px;
+}
+
+#info_perso
+{
+	order: 1;
+	width: 200px;
+	margin:25px;
+}
+
 #project
 {
 	max-width: 400px;
 	text-align:left;
+}
+
+#skills 
+{
+	display: flex;
+	flex-wrap: wrap;
+	max-width:900px;
+	margin: auto;
+	justify-content: center;
 }
 
 .align
@@ -217,5 +269,21 @@ video
 		height: 0.7rem;
 		margin: 5px;
 	}
-}
+	
+	#header
+	{
+		flex-flow: row wrap;
+		justify-content: center;
+		min-height:400px;
+	}
+
+	#info_perso
+	{
+		order: 2;
+	}
+
+	#In-CV
+	{
+		order: 1;
+	}
 
