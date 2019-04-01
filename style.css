@@ -77,13 +77,6 @@ video
 	border:1px solid #dcdcdc;
 }
 
-#competences
-{
-	max-width: 400px;
-	font-size: 0.8em;
-	text-align:left;
-}
-
 #contact
 {
 	order: 3;
@@ -103,6 +96,12 @@ video
 	margin-top: 50px;
 }
 
+#In
+{
+	height: 1.8rem;
+	margin-top: 4px;
+}
+
 #In-CV
 {
 	display: flex;
@@ -110,7 +109,6 @@ video
 	align-items: center;
 	justify-content: center;
 	width: 200px;
-	margin-bottom:auto;
 	margin: 25px;
 }
 
@@ -121,10 +119,13 @@ video
 	margin:25px;
 }
 
-#project
+#languages
 {
-	max-width: 400px;
+	font-size: 0.8em;
 	text-align:left;
+	padding-left: 20px;	
+	margin-right: 10px;
+	line-height:1.2rem;
 }
 
 #skills 
@@ -176,6 +177,13 @@ video
 }
 .accordion-content {
 	display: none;
+}
+
+.competences
+{
+	max-width: 400px;
+	font-size: 0.8em;
+	text-align:left;
 }
 
 .git {
@@ -230,6 +238,12 @@ video
 	height: 5rem;
 }
 
+.project
+{
+	max-width: 400px;
+	text-align:left;
+}
+
 .skill_icon
 {
 	height: 1.1em;
@@ -274,7 +288,7 @@ video
 	{
 		flex-flow: row wrap;
 		justify-content: center;
-		min-height:400px;
+		max-height:800px;
 	}
 
 	#info_perso
