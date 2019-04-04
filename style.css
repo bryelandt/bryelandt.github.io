@@ -1,6 +1,8 @@
 a
 {
-	color: #777;
+	text-decoration: none;
+	color: #6bb96b;
+	font-weight: bold;
 }
 
 body
@@ -162,7 +164,7 @@ video
 	position: relative;
 	margin-top: 1px;
 	min-height: 5rem;
-	background: #94ff94;
+	background: #b8ffbb;
 	align-items: center;
 }
 
@@ -172,7 +174,7 @@ video
 }
 
 .accordion-toggle:hover {
-	background: #7eda7e;
+	background: #b0f3b3;
 }
 .accordion-toggle span.toggle-icon {
 	position: absolute;
