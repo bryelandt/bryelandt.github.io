@@ -153,8 +153,11 @@ video
 
 .accordion-container{
 	position: relative;	
-	width: 100%;
+	max-width: 1000px;
+	margin: auto;
 	min-height: 5em;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	border: 1px rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
@@ -162,9 +165,9 @@ video
 	display: flex;
 	justify-content: space-around;
 	position: relative;
-	margin-top: 1px;
+	margin-top: 10px;
 	min-height: 5rem;
-	background: #b8ffbb;
+	/*background: #b8ffbb;*/
 	align-items: center;
 }
 
@@ -174,14 +177,9 @@ video
 }
 
 .accordion-toggle:hover {
-	background: #b0f3b3;
+	background: rgb(240, 240, 240);
 }
-.accordion-toggle span.toggle-icon {
-	position: absolute;
-	top: 9px;
-	right: 20px;
-	font-size: 1.5em;
-}
+
 .accordion-content {
 	display: none;
 }
