@@ -83,6 +83,7 @@ video
 	order: 3;
 	width: 200px;
 	margin:25px;
+	text-align: left;
 }
 
 #header
@@ -118,6 +119,7 @@ video
 	order: 1;
 	width: 200px;
 	margin:25px;
+	text-align: left;
 }
 
 #languages
@@ -144,6 +146,13 @@ video
 	justify-content: center;
 }
 
+#wroclaw
+{
+	width: 80%;
+	max-width: 650px;
+	margin-bottom: 20px;
+}
+
 .align
 {
 	display: flex;
@@ -153,11 +162,11 @@ video
 
 .accordion-container{
 	position: relative;	
+	width: 90%;
 	max-width: 1000px;
 	margin: auto;
 	min-height: 5em;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-	border: 1px rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
@@ -165,6 +174,7 @@ video
 	display: flex;
 	justify-content: space-around;
 	position: relative;
+	border:1px solid rgba(0, 0, 0, 0.05);
 	margin-top: 10px;
 	min-height: 5rem;
 	/*background: #b8ffbb;*/
@@ -176,7 +186,7 @@ video
 	cursor: pointer; 
 }
 
-.accordion-toggle:hover {
+.accordion-toggle.open, .accordion-toggle:hover{
 	background: rgb(240, 240, 240);
 }
 
@@ -217,8 +227,7 @@ video
 	display:inline-block;
 	cursor:pointer;
 	color:#777777;
-	font-family:Arial;
-	font-size:15px;
+	font-size:12px;
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
@@ -309,6 +318,7 @@ video
 	#info_perso
 	{
 		order: 2;
+		text-align: center;
 	}
 
 	#In-CV
