@@ -73,9 +73,8 @@ video
 #contact
 {
 	order: 3;
-	width: 200px;
-	margin:25px;
 	text-align: left;
+	margin: 0px 10% 25px auto;
 }
 
 #header
@@ -84,12 +83,12 @@ video
 	flex-flow: column wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin:auto;
+	margin: auto;
 	max-height: 400px;
 	max-width: 800px;
 	margin-top: 50px;
 }
-
+	
 #In
 {
 	height: 1.8rem;
@@ -100,17 +99,14 @@ video
 {
 	display: flex;
 	order: 2;
-	align-items: center;
-	justify-content: space-around;
-	width: 200px;
-	margin: 25px;
+	margin: 20px 10% 20px auto;
 }
 
 #info_perso
 {
 	order: 1;
 	width: 200px;
-	margin:25px;
+	margin: 25px auto 25px 10%;
 	text-align: left;
 }
 
@@ -187,6 +183,24 @@ video
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
+}
+
+.citation
+{
+	text-align: right;
+	font-size: small;
+
+	max-width: 640px;
+	margin: 30px auto;
+	padding: 15px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+}
+
+.citation > p
+{
+	font-style: italic;
+	text-align: left;
 }
 
 .competences
@@ -294,6 +308,11 @@ video
 	{
 		flex-flow: column;
 	}
+	
+	.citation
+	{
+		margin: 30px 20px;
+	}
 
 	.git {
 		margin-top: 15px;
@@ -322,10 +341,23 @@ video
 	{
 		order: 2;
 		text-align: center;
+		margin: auto;
 	}
 
 	#In-CV
 	{
 		order: 1;
+		margin: 25px;
 	}
-
+	
+	#contact
+	{
+		margin-top: 25px;	
+	}
+}
+@media screen and (max-width: 800px) {
+	.citation
+	{
+		margin: 30px 20px;
+	}
+}
