@@ -43,6 +43,12 @@ h4
 	margin-top: 40px;
 }
 
+iframe
+{
+	width: 560px;
+	height: 315px;
+}
+
 p
 {
 	font-size: small;
@@ -53,6 +59,10 @@ p
 p.outils
 {
 	text-align: center;
+}
+
+p.caption
+{
 }
 
 span.line {
@@ -169,6 +179,7 @@ video
 
 .accordion-content {
 	display: none;
+	padding-bottom: 15px;
 }
 
 .buttons
@@ -220,7 +231,7 @@ video
 	font-weight:bold;
 	padding:10px 30px;
 	text-decoration:none;
-	margin: 15px 30px;
+	margin: 15px 30px 0px 30px;
 }
 .git:hover {
 	background: #a1ddc9;
@@ -297,6 +308,12 @@ video
   h3 {
     font-size: medium;
   }
+
+	iframe
+	{
+		width: 95%;
+		height: 95%;
+	}
 
 	.buttons
 	{
