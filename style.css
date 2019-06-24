@@ -80,6 +80,15 @@ video
 	border:1px solid #dcdcdc;
 }
 
+	#bac
+	{
+		max-height: 400px;	
+	}
+	#scout
+	{
+		max-height: 600px;	
+	}
+
 #contact
 {
 	order: 3;
@@ -341,6 +350,8 @@ video
 		margin: 5px;
 	}
 	
+
+
 	#header
 	{
 		flex-flow: row wrap;
